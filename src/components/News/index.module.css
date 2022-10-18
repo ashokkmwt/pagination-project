@@ -1,5 +1,7 @@
 .container {
     width: 100%;
+    min-height: 100vh;
+    color: #f2f2f2;
 }
 
 header {
@@ -9,25 +11,19 @@ header {
     align-items: center;
     gap: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-header input {
-    outline: none;
-    padding: 10px;
 }
 
 header button {
     cursor: pointer;
-    padding: 8px;
 }
 
 main {
     width: 100%;
-    /* height: 85vh; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .section {
@@ -37,22 +33,28 @@ main {
     justify-content: center;
     gap: 20%;
     padding: 20px;
+  
 }
 
 .newsBox {
     width: 400px;
     height: 300px;
-    background-color: rgb(148, 126, 126);
+    background-color: #292727;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 10px;
+    padding-top: 10%;
+    transform: rotate(-25deg);
+}
+
+.newsBox h5 span{
+    text-transform: capitalize;
 }
 
 .image{
-    width: 50%;
-    height: 50%;
+    width: 150px;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -64,17 +66,13 @@ main {
         flex-direction: column;
     }
 
-    main {
-        display: unset;
-    }
-
     .section {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .newsBox{
-        width: 70%;
+        width: 80%;
+        transform: unset;
+        padding-top: 15%;
     }
 }
